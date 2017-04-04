@@ -11,11 +11,13 @@ import {TodoItemComponent} from "./components/todo-item/todo-item.component";
 import {TodoStoreService} from "./services/todo-store.service";
 import {ArchiveListComponent} from "./components/archive-list/archive-list.component";
 import {NewTodoComponent} from "./components/new-todo/new-todo.component";
+import {SubmitFormComponent} from "./components/submit-form/submit-form.component";
 
 
 const appRoutes: Routes = [
   {path: 'todo', component: TodoPageComponent},
   {path: 'archive', component: ArchivePageComponent},
+  {path: 'form', component: SubmitFormComponent},
   {path: '**', component: TodoPageComponent}
 ];
 
@@ -27,7 +29,8 @@ const appRoutes: Routes = [
     TodoItemComponent,
     NewTodoComponent,
     ArchivePageComponent,
-    ArchiveListComponent
+    ArchiveListComponent,
+    SubmitFormComponent
   ],
   imports: [
     BrowserModule,
